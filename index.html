@@ -23,23 +23,23 @@
       * {
         max-width: 1200px;
         margin: 0 auto;
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/134/original/Sugakiya_background.jpg?1679520108);
+        background-image: url();
         background-repeat: repeat;
         background-size: cover;
       }
 
-      .header-img {
-        display: block;
-        margin-top: 120px;
+      .container {
+        margin: 0 auto;
       }
-      p {
-        text-align: center;
+
+      img {
+        display: block;
       }
     </style>
     <title>My Favorite Restaurant Challenge</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mb-5">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
@@ -60,17 +60,40 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="./#about">About</a>
+            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="#">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-    <header>
-      <p>My all the time favorite Ramen Restaurant from childhood</p>
-    </header>
-    <section></section>
+    <div class="container">
+      <header>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/137/original/Sugakiya_Tokusei.jpg?1679520128"
+          alt="Sugakiya Ramen"
+          class="border border-danger border-5 rounded-5 mt-5"
+        />
+      </header>
+    </div>
+    <section class="container" id="about">
+      <h1 class="text-center mt-5">About Sugakiya</h1>
+      <p class="mt-3">
+        To begin with, we need to talk about
+        <a
+          href="https://en.wikipedia.org/wiki/Nagoya_cuisine"
+          target="_blank"
+          title="Nagoya cuisine"
+          class="text-decoration-none"
+        >
+          "Nagoya Meshi"
+        </a>
+        (Nagoya food) . Nagoya Meshi is a Japanese reginal cuisine of the city
+        of Nagoya and surrounding region in cental Japan.
+      </p>
+    </section>
+
     <script></script>
+    <footer></footer>
   </body>
 </html>
