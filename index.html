@@ -23,23 +23,56 @@
       * {
         max-width: 1200px;
         margin: 0 auto;
-        background-image: url();
-        background-repeat: repeat;
-        background-size: cover;
+        font-family: "Waiting for the Sunrise", cursive;
       }
 
-      .container {
-        margin: 0 auto;
+      h1 {
+        margin: 100px;
+      }
+
+      .typewriter h1,
+      h2 {
+        overflow: hidden;
+        border-right: 0.15em solid red;
+        white-space: nowrap;
+        letter-spacing: 0.15em;
+        animation: typing 3.5s steps(40, end),
+          blink-caret 0.75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: red;
+        }
       }
 
       img {
         display: block;
       }
+
+      @media (max-width: 900px) {
+        h1 {
+          font-size: 26px;
+        }
+      }
     </style>
     <title>My Favorite Restaurant Challenge</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mb-5">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
@@ -67,17 +100,18 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <header>
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/137/original/Sugakiya_Tokusei.jpg?1679520128"
-          alt="Sugakiya Ramen"
-          class="border border-danger border-5 rounded-5 mt-5"
-        />
-      </header>
-    </div>
-    <section class="container" id="about">
-      <h1 class="text-center mt-5">About Sugakiya</h1>
+    <section>
+      <div class="typewriter">
+        <h1 class="text-center">My Favorite Restaurant Sugakiya</h1>
+      </div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/137/original/Sugakiya_Tokusei.jpg?1679520128"
+        alt="Sugakiya Ramen"
+        class="border border-danger border-5 rounded-5 mt-5"
+      />
+    </section>
+    <section class="container">
+      <h2 class="text-center mt-5" id="about">About Sugakiya</h2>
       <p class="mt-3">
         To begin with, we need to talk about
         <a
@@ -88,14 +122,16 @@
         >
           "Nagoya Meshi"
         </a>
-        (Nagoya food). Nagoya Meshi is a Japanese reginal cuisine of the city of
-        Nagoya and surrounding region in cental Japan. And Sugakiya is the one
-        of chain in Nagoya. It is well known as reasonable and tasty. Teenagers
-        can stop by to eat with friends after schools. If you eat here, you can
-        experience and feel real Nagoya food.
+        (It is in Japanese as Nagoya food). Nagoya Meshi is a Japanese regional
+        cuisine of the city of Nagoya and the surrounding region in cental
+        Japan. And Sugakiya is the one of chains in Nagoya. It is well-known as
+        reasonable and tasty. Teenagers can stop by to eat with friends after
+        school. If you eat here, you can experience and feel real Nagoya food.
+        It is a taste that I have known since childhood and is always a welcome
+        relief.
       </p>
+      <h2 class="text-center mt-5" id="gallery"></h2>
     </section>
-
     <script></script>
     <footer></footer>
   </body>
