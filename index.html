@@ -63,9 +63,26 @@
         display: block;
       }
 
+      .grid-3-columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+
+      .img-responsive {
+        width: 250px;
+        display: block;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
       @media (max-width: 900px) {
         h1 {
           font-size: 26px;
+        }
+
+        .img-responsive {
+          width: 180px;
         }
       }
     </style>
@@ -94,7 +111,7 @@
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="./#about">About</a>
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="./#menu">Menu</a>
             <a class="nav-link" href="#">Contact</a>
           </div>
         </div>
@@ -130,7 +147,39 @@
         It is a taste that I have known since childhood and is always a welcome
         relief.
       </p>
-      <h2 class="text-center mt-5" id="gallery"></h2>
+      <h2 class="text-center mt-5" id="menu">Menu</h2>
+      <div class="grid grid-3-columns">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/137/original/Sugakiya_Tokusei.jpg?1679520128"
+          alt="Tokusei Ramen"
+          class="img-responsive"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/885/original/Tantan.png?1679952030"
+          class="img-responsive"
+          alt="Tantan"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/886/original/Yasai.png?1679952038"
+          class="img-responsive"
+          alt="Yasai Ramen"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/878/original/Miso.jpg?1679950879"
+          class="img-responsive"
+          alt="Miso Ramen"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/880/original/Gomoku.jpg?1679950895"
+          class="img-responsive"
+          alt="Gomoku"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/884/original/Sumibiyaki.png?1679952021"
+          class="img-responsive"
+          alt="Sumibiyaki"
+        />
+      </div>
     </section>
     <script></script>
     <footer></footer>
