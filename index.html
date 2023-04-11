@@ -59,6 +59,17 @@
         }
       }
 
+      .scroll-up {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 1s;
+      }
+
+      .scroll-up.on {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
       img {
         display: block;
       }
@@ -120,7 +131,7 @@
         </div>
       </div>
     </nav>
-    <section>
+    <section class="scroll-up">
       <div class="typewriter">
         <h1 class="text-center mb-5">My Favorite Restaurant Sugakiya</h1>
       </div>
