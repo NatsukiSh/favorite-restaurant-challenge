@@ -138,6 +138,11 @@
       }
 
       @media (max-width: 400px) {
+        body {
+          width: 90%;
+          margin: 0 auto;
+        }
+
         h2,
         h3 {
           font-size: 20px;
@@ -148,8 +153,15 @@
           text-align: center;
         }
 
+        img {
+          width: 100%;
+        }
+
         .img-responsive {
-          width: 50px;
+          width: 100px;
+          display: block;
+          border-radius: 5px;
+          object-fit: cover;
         }
       }
     </style>
