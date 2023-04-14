@@ -28,6 +28,13 @@
         max-width: 1200px;
         margin: 0 auto;
         font-family: "Waiting for the Sunrise", cursive;
+        background-image: linear-gradient(
+            rgba(240, 201, 201, 0.6),
+            rgba(230, 180, 180, 0.8)
+          ),
+          url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/134/original/Sugakiya_background.jpg?1679520108);
+        background-repeat: repeat;
+        background-size: cover;
       }
 
       h2 {
@@ -114,7 +121,7 @@
       .social-links a {
         margin: 0 5px;
         color: #700502;
-        background: #fff;
+        background: #edc0c1;
         padding: 10px 14px;
         font-size: 30px;
         border-radius: 50%;
@@ -132,29 +139,62 @@
           font-size: 26px;
         }
 
+        img {
+          width: 100%;
+        }
+
+        img:hover {
+          transform: scale(1.1);
+        }
+
         .img-responsive {
           width: 180px;
+        }
+
+        .social-links a {
+          margin: 0 5px;
+          color: #700502;
+          background: #edc0c1;
+          padding: 10px 14px;
+          font-size: 30px;
+          border-radius: 50%;
+          transition: all 100ms ease-in-out;
+        }
+
+        .social-links a:hover {
+          color: white;
+          background: #700502;
         }
       }
 
       @media (max-width: 400px) {
         body {
-          width: 90%;
+          width: 100%;
           margin: 0 auto;
         }
 
         h2,
         h3 {
-          font-size: 20px;
+          font-size: 18px;
           text-align: center;
         }
 
         p {
           text-align: center;
+          font-size: 12px;
+        }
+
+        iframe {
+          display: block;
+          width: 90%;
         }
 
         img {
           width: 100%;
+        }
+
+        img:hover {
+          transform: scale(1.1);
         }
 
         .img-responsive {
@@ -162,6 +202,21 @@
           display: block;
           border-radius: 5px;
           object-fit: cover;
+        }
+
+        .social-links a {
+          margin: 0 5px;
+          color: #700502;
+          background: #edc0c1;
+          padding: 10px 14px;
+          font-size: 30px;
+          border-radius: 50%;
+          transition: all 100ms ease-in-out;
+        }
+
+        .social-links a:hover {
+          color: white;
+          background: #700502;
         }
       }
     </style>
@@ -201,137 +256,141 @@
         </div>
       </div>
     </nav>
-    <section>
-      <div class="typewriter">
-        <h2 class="text-center mb-5">My Favorite Restaurant Sugakiya</h2>
-      </div>
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/436/original/Miso_ramen.jpg?1679688993"
-        alt="Sugakiya Ramen"
-        title="Miso Ramen"
-        class="border border-danger border-5 rounded-5 mb-5"
-      />
-    </section>
-    <section>
-      <div class="typewriter">
-        <h2 class="text-center mb-3" id="about">About Sugakiya</h2>
-      </div>
-      <p class="mb-5">
-        To begin with, we need to talk about
-        <a
-          href="https://en.wikipedia.org/wiki/Nagoya_cuisine"
-          target="_blank"
-          title="Nagoya cuisine"
-          class="text-decoration-none"
-        >
-          "Nagoya Meshi"
-        </a>
-        (It is in Japanese as Nagoya food). Nagoya Meshi is a Japanese regional
-        cuisine of the city of Nagoya and the surrounding region in cental
-        Japan. And Sugakiya is the one of chains in Nagoya. It is well-known as
-        reasonable and tasty. Teenagers can stop by to eat with friends after
-        school. If you eat here, you can experience and feel real Nagoya food.
-        It is a taste that I have known since childhood and is always a welcome
-        relief.
-      </p>
-      <div class="typewriter">
-        <h2 class="text-center mb-5" id="menu">Menu</h2>
-      </div>
-      <div class="grid grid-3-columns">
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/137/original/Sugakiya_Tokusei.jpg?1679520128"
-          alt="Tokusei Ramen"
-          class="img-responsive border border-danger border-5 rounded-5"
-          title="Tokusei Ramen"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/885/original/Tantan.png?1679952030"
-          class="img-responsive border border-danger border-5 rounded-5"
-          alt="Tantan"
-          title="Tantan"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/886/original/Yasai.png?1679952038"
-          class="img-responsive border border-danger border-5 rounded-5"
-          alt="Yasai Ramen"
-          title="Yasai Ramen"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/878/original/Miso.jpg?1679950879"
-          class="img-responsive border border-danger border-5 rounded-5"
-          alt="Miso Ramen"
-          title="Miso Ramen"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/880/original/Gomoku.jpg?1679950895"
-          class="img-responsive border border-danger border-5 rounded-5"
-          alt="Gomoku"
-          title="Gomoku"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/884/original/Sumibiyaki.png?1679952021"
-          class="img-responsive border border-danger border-5 rounded-5"
-          alt="Sumibiyaki"
-          title="Sumibiyaki"
-        />
-      </div>
-    </section>
-    <section id="locations">
-      <h2 class="text-center">
-        <i class="fa-sharp fa-solid fa-location-dot"></i> Locations
-      </h2>
-      <p class="text-center">
-        There are heaps of locations in the Chubu area. Let's try them out!
-      </p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d427040.9991630536!2d136.63376939781259!3d35.08750025572435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSugakiya!5e0!3m2!1sen!2sde!4v1681323617079!5m2!1sen!2sde"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-    <hr class="mt-5" />
-    <footer class="grid grid-2-columns">
-      <div>
-        <h3>About this website</h3>
-        <p>
-          This is the monthly challenge from SheCodes to practice my coding
-          skills. This month is to create a landing page about my favorite
-          restaurant.
-        </p>
-      </div>
-      <div>
-        <h3>About me</h3>
-        <p>
-          I am self-motivated Frontend Web Developer. I have completed Workshop
-          in SheCodes and looking for new opportunity.
-          <br />
-          This page was coded with ♥ by Natsuki Shuko
-        </p>
-        <br />
-        <div class="social-links">
-          <a
-            href="https://www.linkedin.com/in/natsukishuko/"
-            target="_blank"
-            class="text-decoration-none"
-            title="Linkedin"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-
-          <a
-            href="https://github.com/NatsukiSh/favorite-restaurant-challenge"
-            target="_blank"
-            class="text-decoration-none"
-            title="GitHub"
-          >
-            <i class="fa-brands fa-github"></i
-          ></a>
+    <div class="container">
+      <section>
+        <div class="typewriter">
+          <h2 class="text-center mb-5">My Favorite Restaurant Sugakiya</h2>
         </div>
-      </div>
-    </footer>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/436/original/Miso_ramen.jpg?1679688993"
+          alt="Sugakiya Ramen"
+          title="Miso Ramen"
+          class="border border-danger border-5 rounded-5 mb-5"
+        />
+      </section>
+      <section>
+        <div class="typewriter">
+          <h2 class="text-center mb-3" id="about">About Sugakiya</h2>
+        </div>
+        <p class="mb-5">
+          To begin with, we need to talk about
+          <a
+            href="https://en.wikipedia.org/wiki/Nagoya_cuisine"
+            target="_blank"
+            title="Nagoya cuisine"
+            class="text-decoration-none"
+          >
+            "Nagoya Meshi"
+          </a>
+          (It is in Japanese as Nagoya food). Nagoya Meshi is a Japanese
+          regional cuisine of the city of Nagoya and the surrounding region in
+          cental Japan. And Sugakiya is the one of chains in Nagoya. It is
+          well-known as reasonable and tasty. Teenagers can stop by to eat with
+          friends after school. If you eat here, you can experience and feel
+          real Nagoya food. It is a taste that I have known since childhood and
+          is always a welcome relief.
+        </p>
+        <div class="typewriter">
+          <h2 class="text-center mb-5" id="menu">Menu</h2>
+        </div>
+        <div class="grid grid-3-columns">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/137/original/Sugakiya_Tokusei.jpg?1679520128"
+            alt="Tokusei Ramen"
+            class="img-responsive border border-danger border-5 rounded-5"
+            title="Tokusei Ramen"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/885/original/Tantan.png?1679952030"
+            class="img-responsive border border-danger border-5 rounded-5"
+            alt="Tantan"
+            title="Tantan"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/886/original/Yasai.png?1679952038"
+            class="img-responsive border border-danger border-5 rounded-5"
+            alt="Yasai Ramen"
+            title="Yasai Ramen"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/878/original/Miso.jpg?1679950879"
+            class="img-responsive border border-danger border-5 rounded-5"
+            alt="Miso Ramen"
+            title="Miso Ramen"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/880/original/Gomoku.jpg?1679950895"
+            class="img-responsive border border-danger border-5 rounded-5"
+            alt="Gomoku"
+            title="Gomoku"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/884/original/Sumibiyaki.png?1679952021"
+            class="img-responsive border border-danger border-5 rounded-5"
+            alt="Sumibiyaki"
+            title="Sumibiyaki"
+          />
+        </div>
+      </section>
+      <section>
+        <div class="typewriter" id="locations">
+          <h2 class="text-center">
+            <i class="fa-sharp fa-solid fa-location-dot"></i> Locations
+          </h2>
+          <p class="text-center">
+            There are heaps of locations in the Chubu area. Let's try them out!
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d427040.9991630536!2d136.63376939781259!3d35.08750025572435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSugakiya!5e0!3m2!1sen!2sde!4v1681323617079!5m2!1sen!2sde"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <hr class="mt-5" />
+      <footer class="grid grid-2-columns">
+        <div>
+          <h3>About this website</h3>
+          <p>
+            This is the monthly challenge from SheCodes to practice my coding
+            skills. This month is to create a landing page about my favorite
+            restaurant.
+          </p>
+        </div>
+        <div>
+          <h3>About me</h3>
+          <p>
+            I am self-motivated Frontend Web Developer. I have completed
+            Workshop in SheCodes and looking for new opportunity.
+            <br />
+            This page was coded with ♥ by Natsuki Shuko
+          </p>
+          <br />
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/natsukishuko/"
+              target="_blank"
+              class="text-decoration-none"
+              title="Linkedin"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+
+            <a
+              href="https://github.com/NatsukiSh/favorite-restaurant-challenge"
+              target="_blank"
+              class="text-decoration-none"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script></script>
   </body>
 </html>
